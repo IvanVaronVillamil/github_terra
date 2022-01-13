@@ -9,7 +9,8 @@ pipeline {
 
     stage('init') {
       steps {
-        sh 'sh script: \'pwd\''
+        sh '''sh \'\'\'#!/bin/bash
+                 echo "hello world"'''
       }
     }
 
