@@ -22,6 +22,7 @@ pipeline {
     stage('plan') {
       steps {
         git(url: 'https://github.com/IvanVaronVillamil/github_terra', branch: 'main', credentialsId: 'fbf5ce93-3c95-47f4-bc57-72fc149502b2')
+        sh 'terraform init'
         sh 'terraform plan'
       }
     }
