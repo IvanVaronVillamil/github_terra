@@ -9,7 +9,7 @@ pipeline {
 
     stage('init') {
       steps {
-        sh 'sh label: \'\', script: \'sudo terraform init\''
+        sh 'sh label: \'\', script: \'pwd\''
       }
     }
 
