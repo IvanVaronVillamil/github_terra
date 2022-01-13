@@ -15,7 +15,7 @@ pipeline {
 
     stage('validate') {
       steps {
-        sh 'sh label: \'\', script: \'terraform validate\''
+        sh 'terraform validate'
       }
     }
 
