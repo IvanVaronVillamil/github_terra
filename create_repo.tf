@@ -11,7 +11,7 @@ resource "github_repository" "test-repo" {
 
 resource "github_repository" "test-repo-fr-pipeline" {
   name        = "test-repo"
-  description = "Test repo from Terraform with Jenkins pipelin"
+  description = "Test repo from Terraform with Jenkins pipeline"
   visibility  = "private"
   template {
     owner      = "IvanVaronVillamil"
