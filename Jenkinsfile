@@ -9,8 +9,7 @@ pipeline {
 
     stage('init') {
       steps {
-        sh '''sh "#!/bin/bash \\n" + 
-       "echo \\"Hello from \\$SHELL\\""'''
+        sh 'terraform init'
       }
     }
 
